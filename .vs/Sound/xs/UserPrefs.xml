@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{04830103-3C22-4BCC-B839-3B0545300625}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Sound/wwwroot/site.js">
+    <Files>
+      <File FileName="Sound/Models/SoundItem.cs" Line="1" Column="26" />
+      <File FileName="Sound/Models/SoundContext.cs" Line="5" Column="6" />
+      <File FileName="Sound/Controllers/SoundController.cs" Line="23" Column="69" />
+      <File FileName="Sound/Startup.cs" Line="42" Column="1" />
+      <File FileName="Sound/Program.cs" Line="6" Column="28" />
+      <File FileName="Sound/wwwroot/index.html" Line="10" Column="1" />
+      <File FileName="Sound/wwwroot/site.js" Line="1" Column="14" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Sound" expanded="True">
+            <Node name="Sound" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="sounds" expanded="True" />
+                <Node name="site.js" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Sound PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

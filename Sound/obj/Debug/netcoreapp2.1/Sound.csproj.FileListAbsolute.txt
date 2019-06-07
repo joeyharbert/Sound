@@ -1,0 +1,14 @@
+/Users/joey/Projects/Sound/Sound/bin/Debug/netcoreapp2.1/Sound.deps.json
+/Users/joey/Projects/Sound/Sound/bin/Debug/netcoreapp2.1/Sound.runtimeconfig.json
+/Users/joey/Projects/Sound/Sound/bin/Debug/netcoreapp2.1/Sound.runtimeconfig.dev.json
+/Users/joey/Projects/Sound/Sound/bin/Debug/netcoreapp2.1/Sound.dll
+/Users/joey/Projects/Sound/Sound/bin/Debug/netcoreapp2.1/Sound.pdb
+/Users/joey/Projects/Sound/Sound/obj/Debug/netcoreapp2.1/Sound.csprojAssemblyReference.cache
+/Users/joey/Projects/Sound/Sound/obj/Debug/netcoreapp2.1/Sound.csproj.CoreCompileInputs.cache
+/Users/joey/Projects/Sound/Sound/obj/Debug/netcoreapp2.1/Sound.RazorAssemblyInfo.cache
+/Users/joey/Projects/Sound/Sound/obj/Debug/netcoreapp2.1/Sound.RazorAssemblyInfo.cs
+/Users/joey/Projects/Sound/Sound/obj/Debug/netcoreapp2.1/Sound.AssemblyInfoInputs.cache
+/Users/joey/Projects/Sound/Sound/obj/Debug/netcoreapp2.1/Sound.AssemblyInfo.cs
+/Users/joey/Projects/Sound/Sound/obj/Debug/netcoreapp2.1/Sound.RazorTargetAssemblyInfo.cache
+/Users/joey/Projects/Sound/Sound/obj/Debug/netcoreapp2.1/Sound.dll
+/Users/joey/Projects/Sound/Sound/obj/Debug/netcoreapp2.1/Sound.pdb
