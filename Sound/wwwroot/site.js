@@ -40,6 +40,3 @@ function getData() {
     }
   });
 }
-
-
-// TRYNA FIGURE OUT HOW TO MAKE AUDIO PLAY

@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.IO;
 using SoundApi.Models;
 
 namespace SoundApi.Controllers
@@ -20,8 +21,14 @@ namespace SoundApi.Controllers
 
             if (_context.Sounds.Count() == 0)
             {
-                _context.Sounds.Add(new SoundItem { url = "/sounds/sure.wav" });
-                _context.SaveChanges();
+
+                string[] files = Directory.GetFiles("./wwwroot/sounds/", "*.wav", SearchOption.TopDirectoryOnly);
+
+                for (int i = 0; i < files.Length; i++)
+                {
+                    _context.Sounds.Add(new SoundItem { url = files[i].Substring(9), title = files[i].Substring(17) });
+                    _context.SaveChanges();
+                }
             }
         }
 
