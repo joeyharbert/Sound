@@ -26,7 +26,7 @@ namespace SoundApi.Controllers
 
                 for (int i = 0; i < files.Length; i++)
                 {
-                    _context.Sounds.Add(new SoundItem { url = files[i].Substring(9), title = files[i].Substring(17) });
+                    _ = _context.Sounds.Add(new SoundItem { url = files[i].Substring(9), title = files[i].Substring(17, files[i].Length - 21) });
                     _context.SaveChanges();
                 }
             }

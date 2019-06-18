@@ -23,20 +23,30 @@ function getData() {
     url: uri,
     cache: false,
     success: function(data) {
-      const tBody = $("#sounds");
+      const tBody = document.getElementById("sounds");
 
       $(tBody).empty();
 
       getCount(data.length);
-
+        var innerHTML = "";
         $.each(data, function(key, item) {
-          const tr = $("<audio controls>")
-              .append($("<source />", {src: item.url, type:"audio/wav"}))
-              .append($("</audio>"));
-        tr.appendTo(tBody);
-      });
+          //const tr = $("<audio controls>")
+           //   .append($("<source />", {src: item.url, type:"audio/wav"}))
+            //  .append($("</audio>"));
+            //tr.appendTo(tBody);
+            const button = "<button onclick=\"playSound('" + item.url + "')\">" + item.title + "</button>";
+            innerHTML += button;
+            
+        });
+        tBody.innerHTML = innerHTML;
 
-      sounds = data;
+        sounds = data;
     }
   });
+}
+
+function playSound(url) {
+    console.log(url);
+    var audio = new Audio(url);
+    audio.play();
 }
