@@ -30,13 +30,8 @@ function getData() {
       getCount(data.length);
         var innerHTML = "";
         $.each(data, function(key, item) {
-          //const tr = $("<audio controls>")
-           //   .append($("<source />", {src: item.url, type:"audio/wav"}))
-            //  .append($("</audio>"));
-            //tr.appendTo(tBody);
             const button = "<button onclick=\"playSound('" + item.url + "')\">" + item.title + "</button>";
-            innerHTML += button;
-            
+            innerHTML += button;       
         });
         tBody.innerHTML = innerHTML;
 
