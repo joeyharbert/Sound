@@ -22,12 +22,23 @@ namespace SoundApi.Controllers
             if (_context.Sounds.Count() == 0)
             {
 
-                string[] files = Directory.GetFiles("./wwwroot/sounds/", "*.wav", SearchOption.TopDirectoryOnly);
 
-                for (int i = 0; i < files.Length; i++)
+                string[] directories = Directory.GetDirectories("./wwwroot/sounds/");
+
+                for (int x = 0; x < directories.Length; x++)
                 {
-                    _ = _context.Sounds.Add(new SoundItem { url = files[i].Substring(9), title = files[i].Substring(17, files[i].Length - 21) });
-                    _context.SaveChanges();
+                    string[] files = Directory.GetFiles(directories[x], "*.wav", SearchOption.TopDirectoryOnly);
+                    string type = directories[x].Substring(9);
+                    for (int i = 0; i < files.Length; i++)
+                    {
+                        string url = files[i].Substring(9);
+                        int titleStartIndex = url.IndexOf('/', 8) + 1;
+                        //I really want to put titleEndex but like... I feel like it would be confusing when you read it for the first time. But I think it's funny.
+                        int titleEndIndex = url.IndexOf('.', url.Length - 5);
+                        string title = url.Substring(titleStartIndex, titleEndIndex - titleStartIndex);
+                        _ = _context.Sounds.Add(new SoundItem { url = url, title = title, type = type });
+                        _context.SaveChanges();
+                    }
                 }
             }
         }
