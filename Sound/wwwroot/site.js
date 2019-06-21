@@ -29,9 +29,29 @@ function getData() {
 
       getCount(data.length);
         var innerHTML = "";
+        var i = 0;
         $.each(data, function(key, item) {
-            const button = "<button onclick=\"playSound('" + item.url + "')\">" + item.title + "</button>";
-            innerHTML += button;       
+            const rowCount = 6;
+            const openRow = "<tr>"
+            const closeRow = "</tr>"
+            const openCell = "<td>"
+            const closeCell= "</td>"
+            const button = "<button class=\"sound\"onclick=\"playSound('" + item.url + "')\">" + item.title + "</button>";
+            var line = ""
+            // if i is divisible by the number of cells in a row it is the start of a row
+            if (i%rowCount === 0) {
+                line += openRow;
+            }
+
+            //add button
+            line = openCell + button + closeCell;
+
+            // if i + 1 is divisible by the number of cells in a row it is the end of a row
+            if ((i + 1) % rowCount === 0) {
+                line += closeRow
+            }
+            innerHTML += line;       
+            i++;
         });
         tBody.innerHTML = innerHTML;
 
