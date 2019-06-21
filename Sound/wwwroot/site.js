@@ -36,7 +36,7 @@ function getData() {
             const closeRow = "</tr>"
             const openCell = "<td>"
             const closeCell= "</td>"
-            const button = "<button class=\"sound\"onclick=\"playSound('" + item.url + "')\">" + item.title + "</button>";
+            const button = "<button class=\"sound " + item.type + "\"onclick=\"playSound('" + item.url + "')\">" + item.title + "</button>";
             var line = ""
             // if i is divisible by the number of cells in a row it is the start of a row
             if (i%rowCount === 0) {
