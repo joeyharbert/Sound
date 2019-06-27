@@ -38,7 +38,7 @@ function getData() {
             const closeRow = "</tr>"
             const openCell = "<td class=\"sound " + item.type + "\">"
             const closeCell= "</td>"
-            const button = "<button \"onclick=\"playSound('" + item.url + "')\">" + item.title + "</button>";
+            const button = "<button onclick=\"playSound('" + item.url + "')\">" + item.title + "</button>";
             var line = ""
             // if i is divisible by the number of cells in a row it is the start of a row
             if (i%rowCount === 0) {
@@ -76,6 +76,7 @@ function getData() {
 }
 
 function playSound(url) {
+    console.log(url);
     var audio = new Audio(url);
     audio.play();
 }
