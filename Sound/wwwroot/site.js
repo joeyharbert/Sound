@@ -1,17 +1,6 @@
 ﻿const uri = "api/sound";
 let sounds = null;
-function getCount(data) {
-  const el = $("#counter");
-  let name = "sound";
-  if (data) {
-    if (data > 1) {
-      name = "sounds";
-    }
-    el.text(data + " " + name);
-  } else {
-    el.text("No " + name);
-  }
-}
+
 
 $(document).ready(function() {
   getData();
@@ -28,8 +17,6 @@ function getData() {
         var type = [];
 
       $(tBody).empty();
-
-      getCount(data.length);
         var innerHTML = "";
         var i = 0;
         $.each(data, function(key, item) {
