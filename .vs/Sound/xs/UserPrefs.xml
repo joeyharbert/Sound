@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{04830103-3C22-4BCC-B839-3B0545300625}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Sound/wwwroot/site.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Sound/wwwroot/site.css">
     <Files>
       <File FileName="Sound/Controllers/SoundController.cs" Line="31" Column="62" />
-      <File FileName="Sound/wwwroot/index.html" Line="10" Column="29" />
-      <File FileName="Sound/wwwroot/site.js" Line="95" Column="1" />
-      <File FileName="Sound/wwwroot/site.css" />
+      <File FileName="Sound/wwwroot/index.html" />
+      <File FileName="Sound/wwwroot/site.js" />
+      <File FileName="Sound/wwwroot/site.css" Line="17" Column="20" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,7 +16,7 @@
               <Node name="Properties" expanded="True" />
               <Node name="wwwroot" expanded="True">
                 <Node name="sounds" expanded="True" />
-                <Node name="site.js" selected="True" />
+                <Node name="site.css" selected="True" />
               </Node>
             </Node>
           </Node>
