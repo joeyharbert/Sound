@@ -1,24 +1,22 @@
 ﻿<Properties StartupConfiguration="{04830103-3C22-4BCC-B839-3B0545300625}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Sound/Controllers/SoundController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Sound/wwwroot/site.js">
     <Files>
-      <File FileName="Sound/Models/SoundItem.cs" Line="6" Column="42" />
-      <File FileName="Sound/Controllers/SoundController.cs" Line="28" Column="1" />
-      <File FileName="Sound/wwwroot/index.html" Line="12" Column="27" />
-      <File FileName="Sound/wwwroot/site.js" Line="11" Column="7" />
-      <File FileName="Sound/wwwroot/site.css" Line="14" Column="27" />
+      <File FileName="Sound/Controllers/SoundController.cs" Line="31" Column="62" />
+      <File FileName="Sound/wwwroot/index.html" Line="10" Column="29" />
+      <File FileName="Sound/wwwroot/site.js" Line="95" Column="1" />
+      <File FileName="Sound/wwwroot/site.css" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Sound" expanded="True">
             <Node name="Sound" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="SoundController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="wwwroot" expanded="True">
                 <Node name="sounds" expanded="True" />
+                <Node name="site.js" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -30,9 +28,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/joey/Projects/Sound/Sound/Controllers/SoundController.cs" relfile="Sound/Controllers/SoundController.cs" line="27" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

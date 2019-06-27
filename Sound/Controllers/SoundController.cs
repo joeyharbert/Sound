@@ -28,7 +28,7 @@ namespace SoundApi.Controllers
                 for (int x = 0; x < directories.Length; x++)
                 {
                     string[] files = Directory.GetFiles(directories[x], "*.wav", SearchOption.TopDirectoryOnly);
-                    string type = directories[x].Substring(9);
+                    string type = directories[x].Substring(17);
                     for (int i = 0; i < files.Length; i++)
                     {
                         string url = files[i].Substring(9);

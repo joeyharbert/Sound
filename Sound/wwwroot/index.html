@@ -7,8 +7,13 @@
         <link rel="stylesheet" href="site.css" type="text/css" />
     </head>
     <body>
-        <div class="header"><h1>Soundboard</h1></div>
+        <div class="header">
+            <h1>Soundboard</h1>
+        </div>
         <p id="counter"></p>
+        <select id="typedropdown" onchange="changeView()">
+            <option value="All">All</option>
+        </select>
         <div class="table"><table id="sounds"></table></div>
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"
